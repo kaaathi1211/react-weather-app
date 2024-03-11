@@ -1,5 +1,67 @@
 .Weather {
     border: 1px solid #808080;
+    background-color: #31363F;
     padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
     border-radius: 8px;
+}
+
+.Weather h1 {
+    color: #EEEEEE;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    opacity: 80%;
+}
+
+.Weather .form-control {
+    margin-top: 20px;
+    width: 60%;
+
+}
+
+.Weather .btn-primary {
+    margin-top: 20px;
+    margin-left: -120px;
+    color: #EEEEEE;
+    font-style: bold;
+    background-color: #76ABAE;
+    border-color: #76ABAE;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Weather h4 {
+    margin-top: 20px;
+    color: #EEEEEE;
+    font-family: "Montserrat", sans-serif;
+    font-style: light;
+    font-size: 25px;
+}
+
+.Weather h3 {
+    color: #76ABAE;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+}
+
+.Weather ul{
+    margin: 0;
+    padding: 0;
+}
+
+.Weather li {
+    font-family: "Montserrat", sans-serif;
+    color: #EEEEEE;
+    text-align: center;
+    list-style: none;
+    width: 55%;
+    border-radius: 3px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.Weather .conditions {
+    text-align: end;
 }
