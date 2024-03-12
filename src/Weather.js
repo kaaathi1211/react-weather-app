@@ -8,7 +8,7 @@ export default function Weather() {
       <form>
         <div className="row">
           <div className="col-6">
-            <input type="search" className="form-control" placeholder="Enter a city..." />
+            <input type="search" className="form-control" placeholder="Enter a city..." autoFocus="on" />
           </div>
           <div className="col-6">
             <button type="submit" className="btn btn-primary">SEARCH</button>
@@ -18,17 +18,24 @@ export default function Weather() {
       <div className="row">
         <div className="col-6">
           <h4>Sydney</h4>
-          <h3>30°C</h3>
+          
+          <span className="temperature">30</span>
+          <span className="units">°C</span>
+          </div>
+          
+
+          <div className="d-flex flex-column">
           <ul className="date">
             <li>Friday 8:00</li>
             <li>Mostly cloudy</li>
           </ul>
-        </div>
-        <div className="col-6">
-          <ul>
-            <li lassName="conditions">Humidity: 60%</li>
-            <li lassName="conditions">Precipitation: 10%</li>
-            <li lassName="conditions">Wind: 20km/h</li>
+          </div>
+        
+        <div className="d-flex flex-column">
+          <ul className="conditions">
+            <li>Humidity: 60%</li>
+            <li>Precipitation: 10%</li>
+            <li>Wind: 20km/h</li>
           </ul>
         </div>
       </div>
