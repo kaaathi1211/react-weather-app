@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
+
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -10,7 +12,7 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.main.temp,
       city: response.data.name,
-      date: "Friday, 7:00",
+      date: new Date (response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconUrl: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F876%2F346%2Foriginal%2Fweather-icon-in-flat-style-sun-cloud-and-rain-illustration-on-white-isolated-background-meteorology-sign-business-concept-vector.jpg&tbnid=2bicBLEGUsCneM&vet=12ahUKEwiZzci80PqEAxV-g2MGHQxfCkMQMygAegQIARBx..i&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F15876346-weather-icon-in-flat-style-sun-cloud-and-rain-vector-illustration-on-white-isolated-background-meteorology-sign-business-concept&docid=y_R5a4iX323kZM&w=1920&h=1920&q=weather%20icon&ved=2ahUKEwiZzci80PqEAxV-g2MGHQxfCkMQMygAegQIARBx",
       wind: response.data.wind.speed,
@@ -49,7 +51,9 @@ export default function Weather(props) {
 
             <div className="d-flex flex-column">
             <ul className="date">
-              <li>{weatherData.date}</li>
+              <li>
+                <FormattedDate date={weatherData.date} />
+              </li>
               <li className="text-capitalize">{weatherData.description}</li>
             </ul>
             </div>
