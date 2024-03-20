@@ -47,8 +47,7 @@
 }
 
 .weather-icon {
-width: 170px;
-height: auto;
+margin-left: 80px;
 }
 
 a {
