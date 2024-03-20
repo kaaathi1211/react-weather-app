@@ -35,7 +35,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
     color: #EEEEEE;
-    opacity: 90%;
     font-family: "Montserrat", sans-serif;
     font-style: light;
     font-size: 24px;
@@ -50,6 +49,11 @@
 .weather-icon {
 width: 170px;
 height: auto;
+}
+
+a {
+    color: #76ABAE;
+    opacity: 60%;
 }
 
 .Weather .units {
