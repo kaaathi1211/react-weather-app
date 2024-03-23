@@ -9,9 +9,9 @@ export default function App() {
       <Weather defaultCity="Sydney"/>
      <footer>
       This app was coded by{" "}
-      <a href="https://www.uxdesignbykk.com/" target="_blank" rel="noreferrer">Katharina Krotke</a>
+      <a href="https://www.uxdesignbykk.com/" target="_blank" rel="noopener noreferrer">Katharina Krotke</a>
       {" "}and is{" "}
-      <a href="https://github.com/kaaathi1211/weather-app-project" target="_blank" rel="noreferrer">open-sourced on GitHub.</a>
+      <a href="https://github.com/kaaathi1211/react-weather-app" target="_blank" rel="noopener noreferrer">open-sourced on GitHub.</a>
       </footer>
       </div>
       </div>
